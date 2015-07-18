@@ -24,7 +24,7 @@ QString convertExcel(const QString &path)
     QXlsx::Document doc(path);
     QString s;
     QXlsx::CellRange range = doc.dimension();
-    QList<QList<QString>> stringTable;
+    QList<QList<QString> > stringTable;
     QList<int> columnWidth;
     int i, j;
 
